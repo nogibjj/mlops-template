@@ -1,0 +1,4 @@
+ipykernel==6.15.2
+pandas==1.4.4
+matplotlib==3.5.3
+matplotlib-inline==0.1.6

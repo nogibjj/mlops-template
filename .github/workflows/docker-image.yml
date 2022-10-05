@@ -1,0 +1,18 @@
+name: Docker Image CI
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  # Allow mannually trigger
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Codespaces container image
+      run: docker build . --file .devcontainer/Dockerfile
