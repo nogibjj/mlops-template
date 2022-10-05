@@ -30,7 +30,10 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-python.python",
-				"ms-python.vscode-pylance"
+				"ms-python.vscode-pylance",
+				"GitHub.copilot-nightly",
+				"GitHub.copilot-labs",
+				"ms-vscode.makefile-tools"
 			]
 		}
 	},
