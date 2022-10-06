@@ -42,11 +42,12 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	// automatically source the virtual environment
+	 "postCreateCommand": "echo source /home/vscode/venv/bin/activate >> ~/.bashrc",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
 	"features": {
-		"azure-cli": "latest"
+		//"azure-cli": "latest"
 	}
 }
