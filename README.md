@@ -3,6 +3,28 @@
 
 ## Template for MLOPs projects
 
+Things included are:
+
+* `Makefile`
+
+* `Pytest`
+
+* `pandas`
+
+* `Pylint`
+
+* `Dockerfile`
+
+* `GitHub copilot`
+
+* `jupyter` and `ipython` 
+
+* Most common Python libraries for ML/DL and Hugging Face
+
+* `githubactions` 
+
+### Used in Following Projects
+
 Used as the base and customized in the following Duke MLOps and Applied Data Engineering Coursera Labs:
 
 * [Lab1-CICD](https://github.com/nogibjj/Coursera-MLOPs-Foundations-Lab-1-CICD)
