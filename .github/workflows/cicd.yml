@@ -19,3 +19,5 @@ jobs:
         run: make test
       - name: format
         run: make format
+      - name: deploy
+        run: make deploy
