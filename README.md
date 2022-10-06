@@ -3,7 +3,7 @@
 
 ## Template for MLOPs projects
 
-Used in the following Duke Coursera Labs:
+Used as the base and customized in the following Duke Coursera Labs:
 
 * [Lab1-CICD](https://github.com/nogibjj/Coursera-MLOPs-Foundations-Lab-1-CICD)
 
