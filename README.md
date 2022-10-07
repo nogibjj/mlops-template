@@ -29,7 +29,7 @@ Used as the base and customized in the following Duke MLOps and Applied Data Eng
 
 * [MLOPs-C2-Lab1-CICD](https://github.com/nogibjj/Coursera-MLOPs-Foundations-Lab-1-CICD)
 * [MLOps-C2-Lab2-PokerSimulator](https://github.com/nogibjj/Coursera-MLOPs-Foundations-Lab-2-poker-simulator)
-* MLOps-C2-Final-HuggingFace
+* [MLOps-C2-Final-HuggingFace](https://github.com/nogibjj/Coursera-MLOps-C2-Final-HuggingFace)
 
 ### References
 
