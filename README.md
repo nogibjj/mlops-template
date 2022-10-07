@@ -27,8 +27,9 @@ Things included are:
 
 Used as the base and customized in the following Duke MLOps and Applied Data Engineering Coursera Labs:
 
-* [Lab1-CICD](https://github.com/nogibjj/Coursera-MLOPs-Foundations-Lab-1-CICD)
-* [Lab2-PokerSimulator](https://github.com/nogibjj/Coursera-MLOPs-Foundations-Lab-2-poker-simulator)
+* [MLOPs-C2-Lab1-CICD](https://github.com/nogibjj/Coursera-MLOPs-Foundations-Lab-1-CICD)
+* [MLOps-C2-Lab2-PokerSimulator](https://github.com/nogibjj/Coursera-MLOPs-Foundations-Lab-2-poker-simulator)
+* MLOps-C2-Final-HuggingFace
 
 ### References
 
