@@ -1,7 +1,7 @@
 [![CI](https://github.com/nogibjj/mlops-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/mlops-template/actions/workflows/cicd.yml)
 [![Codespaces Prebuilds](https://github.com/nogibjj/mlops-template/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/nogibjj/mlops-template/actions/workflows/codespaces/create_codespaces_prebuilds)
 
-## Template for MLOPs projects
+## Template for MLOPs projects with GPU
 
 Things included are:
 
@@ -22,6 +22,12 @@ Things included are:
 * Most common Python libraries for ML/DL and Hugging Face
 
 * `githubactions` 
+
+### Verify GPU works
+
+run `python utils/verify_cuda_pytorch.py`
+run `nvidia-smi -l 1` it should show a GPU
+
 
 ### Used in Following Projects
 
