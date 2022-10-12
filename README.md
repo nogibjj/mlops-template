@@ -25,9 +25,12 @@ Things included are:
 
 ### Verify GPU works
 
-run `python utils/verify_cuda_pytorch.py`
-run `nvidia-smi -l 1` it should show a GPU
+The following examples test out the GPU
 
+* run `python utils/quickstart_pytorch.py`
+* run `python utils/verify_cuda_pytorch.py`
+* run `nvidia-smi -l 1` it should show a GPU
+* run `whisper utils/four-score.m4a --model large` and verify GPU is working with `nvidia-smi -l 1`
 
 ### Used in Following Projects
 

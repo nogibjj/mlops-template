@@ -1,3 +1,7 @@
+#ignore pytorch artifacts
+data
+model.pth
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
