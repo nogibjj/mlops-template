@@ -34,5 +34,7 @@ tokenizers==0.12.1
 #deep learning
 torch==1.12.1
 torchvision==0.13.1
+#openai whisper
+git+https://github.com/openai/whisper.git 
 
 
