@@ -6,8 +6,9 @@ FROM mcr.microsoft.com/vscode/devcontainers/universal:2-focal
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 RUN apt-get update && apt-get -y install --no-install-recommends ffmpeg
-ARG VENV_PATH="/home/vscode/venv"
+ARG USER="codespace"
+ARG VENV_PATH="/home/${USER}/venv"
 COPY requirements.txt /tmp/
-RUN su vscode -c "python -m venv /home/vscode/venv" \
-   && su vscode -c "${VENV_PATH}/bin/pip --disable-pip-version-check --no-cache-dir install -r /tmp/requirements.txt" \
+RUN su $USER -c "python -m venv /home/${USER}/venv" \
+   && su $USER -c "${VENV_PATH}/bin/pip --disable-pip-version-check --no-cache-dir install -r /tmp/requirements.txt" \
    && rm -rf /tmp/requirements.txt
