@@ -37,7 +37,8 @@ The following examples test out the GPU
 
 Additionally, this workspace is setup to fine-tune Hugging Face
 
-![Fine-Tune](https://user-images.githubusercontent.com/58792/195708717-ba4bdfa4-860b-4e1a-8456-70af67f4c7f7.png)
+![fine-tune](https://user-images.githubusercontent.com/58792/195709866-121f994e-3531-493b-99af-c3266c4e28ea.jpg)
+
 
 `python hf_fine_tune_hello_world.py` 
 
