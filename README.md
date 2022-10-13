@@ -35,6 +35,12 @@ The following examples test out the GPU
 * run nvidia monitoring test: `nvidia-smi -l 1` it should show a GPU
 * run whisper transcribe test `./utils/transcribe-whisper.sh` and verify GPU is working with `nvidia-smi -l 1`
 
+Additionally, this workspace is setup to fine-tune Hugging Face
+
+![Fine-Tune](https://user-images.githubusercontent.com/58792/195708717-ba4bdfa4-860b-4e1a-8456-70af67f4c7f7.png)
+
+`python hf_fine_tune_hello_world.py` 
+
 ### Used in Following Projects
 
 Used as the base and customized in the following Duke MLOps and Applied Data Engineering Coursera Labs:
