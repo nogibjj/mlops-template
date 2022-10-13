@@ -1,3 +1,7 @@
+#ignore huggingface
+summarizeApp
+
+
 #ignore pytorch artifacts
 data
 model.pth
