@@ -1,6 +1,7 @@
 #ignore huggingface
 summarizeApp
-
+#ignore fine-tuning
+test_trainer/
 
 #ignore pytorch artifacts
 data
