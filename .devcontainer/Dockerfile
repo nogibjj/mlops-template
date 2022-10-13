@@ -6,6 +6,8 @@ FROM mcr.microsoft.com/vscode/devcontainers/universal:2-focal
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 RUN apt-get update && apt-get -y install --no-install-recommends ffmpeg
-
-# [Optional] Uncomment this line to install global node packages.
-# RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
+ARG VENV_PATH="/home/vscode/venv"
+COPY requirements.txt /tmp/pip-tmp/
+RUN su vscode -c "python -m venv /home/vscode/venv" \
+   && su vscode -c "${VENV_PATH}/bin/pip --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt" \
+   && rm -rf /tmp/pip-tmp

@@ -21,7 +21,7 @@
 				"go.toolsManagement.checkForUpdates": "local",
 				"go.useLanguageServer": true,
 				"go.gopath": "/go",
-				"python.defaultInterpreterPath": "/opt/python/latest/bin/python",
+				"python.defaultInterpreterPath": "/home/vscode/venv/bin/python",
 				"python.linting.enabled": true,
 				"python.linting.pylintEnabled": true,
 				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
