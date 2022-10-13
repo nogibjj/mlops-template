@@ -27,10 +27,11 @@ Things included are:
 
 The following examples test out the GPU
 
-* run `python utils/quickstart_pytorch.py`
-* run `python utils/verify_cuda_pytorch.py`
-* run `nvidia-smi -l 1` it should show a GPU
-* run `whisper utils/four-score.m4a --model large` and verify GPU is working with `nvidia-smi -l 1`
+* run pytorch training test: `python utils/quickstart_pytorch.py`
+* run pytorch CUDA test: `python utils/verify_cuda_pytorch.py`
+* run tensorflow training test: `python utils/quickstart_tf2.py`
+* run nvidia monitoring test: `nvidia-smi -l 1` it should show a GPU
+* run whisper transcribe test `./utils/transcribe-whisper.sh` and verify GPU is working with `nvidia-smi -l 1`
 
 ### Used in Following Projects
 
