@@ -1,9 +1,9 @@
 name: CI
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "GPU" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "GPU" ]
   workflow_dispatch:
 
 jobs:
