@@ -4,7 +4,7 @@ install:
 install-tensorflow:
 	conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
 	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
-	pip install -r tf-requirements.txt
+	/home/codespace/venv/bin/pip install -r tf-requirements.txt
 
 test:
 	python -m pytest -vv --cov=main --cov=mylib test_*.py
