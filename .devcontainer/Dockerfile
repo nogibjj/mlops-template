@@ -13,13 +13,8 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
 ARG USER="codespace"
 ARG VENV_PATH="/home/${USER}/venv"
 COPY requirements.txt /tmp/
-COPY tf-requirements.txt /tmp/
 COPY Makefile /tmp/
 RUN su $USER -c "/usr/bin/python3 -m venv /home/${USER}/venv" \
    && su $USER -c "${VENV_PATH}/bin/pip --disable-pip-version-check --no-cache-dir install -r /tmp/requirements.txt" \
-   $$ su $USER -c "conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y" \
-	&& su $USER -c "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/" \
-   && su $USER -c "${VENV_PATH}/bin/pip --disable-pip-version-check --no-cache-dir install -r /tmp/tf-requirements.txt" \
-   && rm -rf /tmp/requirements.txt \
-   && rm -rf /tmp/tf-requirements.txt
+   && rm -rf /tmp/requirements.txt 
 
