@@ -25,6 +25,11 @@ Things included are:
 
 * `githubactions` 
 
+## Two fun tools to explore:
+
+* Zero-shot classification:  ./hugging-face/zero_shot_classification.py classify
+* Yake for candidate label creation: ./utils/kw_extract.py
+
 ### Verify GPU works
 
 The following examples test out the GPU

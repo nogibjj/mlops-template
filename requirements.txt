@@ -30,6 +30,7 @@ databricks-cli==0.17.3
 databricks-sql-connector==2.1.0
 ##MLOps-HuggingFace
 transformers==4.22.2
+sentencepiece==0.1.97
 datasets==2.5.2
 tokenizers==0.12.1
 #deep learning
@@ -37,5 +38,7 @@ torch==1.12.1
 torchvision==0.13.1
 #openai whisper
 git+https://github.com/openai/whisper.git 
+#yake
+yake==0.4.8
 
 
