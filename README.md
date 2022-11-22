@@ -34,6 +34,8 @@ Things included are:
 
 * [tutorial bento](https://docs.bentoml.org/en/latest/tutorial.html)
 
+`docker run -it --rm -p 8888:8888 -p 3000:3000 -p 3001:3001 bentoml/quickstart:latest`
+
 ### Verify GPU works
 
 The following examples test out the GPU
