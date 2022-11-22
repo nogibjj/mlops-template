@@ -19,6 +19,8 @@ lint:
 container-lint:
 	docker run --rm -i hadolint/hadolint < Dockerfile
 
+checkgpu:
+	python utils/verify_pytorch.py
 refactor: format lint
 
 deploy:

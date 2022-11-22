@@ -30,6 +30,10 @@ Things included are:
 * Zero-shot classification:  ./hugging-face/zero_shot_classification.py classify
 * Yake for candidate label creation: ./utils/kw_extract.py
 
+## Try out Bento
+
+* [tutorial bento](https://docs.bentoml.org/en/latest/tutorial.html)
+
 ### Verify GPU works
 
 The following examples test out the GPU
