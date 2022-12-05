@@ -37,7 +37,7 @@ def classifycli(filename, kw_file):
     text = read_file(filename)
     labels = read_labels(kw_file)  # needs to be a sequence
     results = classify(text, labels)
-    #print out each label and its score in a tabular format with colors
+    # print out each label and its score in a tabular format with colors
     for label, score in zip(results["labels"], results["scores"]):
         click.secho(f"{label}\t{score:.2f}", fg="green")
 
