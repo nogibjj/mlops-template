@@ -17,3 +17,20 @@
 
 https://github.com/bentoml/Yatai
 
+`minikube start --cpus 4 --memory 4096`
+
+Check if it is running:
+
+`minikube status`
+
+Double check context:
+
+`kubectl config current-context`
+
+Enable ingress
+
+`minikube addons enable ingress`
+
+Then install:
+
+`bash <(curl -s "https://raw.githubusercontent.com/bentoml/yatai/main/scripts/quick-install-yatai.sh")`
