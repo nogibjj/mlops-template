@@ -6,22 +6,11 @@ FROM mcr.microsoft.com/vscode/devcontainers/universal:2-focal
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-# NVIDIA CUDA 
+
 RUN apt-get update && apt-get -y install --no-install-recommends \
    ffmpeg \ 
    python3.8-venv \
-   gcc \
-   libcudnn8 
-RUN apt-mark unhold libnvinfer7 \
-   libnvonnxparsers7 \
-   libnvparsers7 \
-   libnvinfer-plugin7 \ 
-   libnvinfer-dev \
-   libnvonnxparsers-dev \ 
-   libnvparsers-dev \
-   libnvinfer-plugin-dev \ 
-   python-libnvinfer \
-   python3-libnvinfer
+   gcc 
 
 ARG USER="codespace"
 ARG VENV_PATH="/home/${USER}/venv"
