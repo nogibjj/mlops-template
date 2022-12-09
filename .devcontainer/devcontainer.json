@@ -67,7 +67,7 @@
 		"seccomp=unconfined",
 		"--privileged",
 		"--init",
-		"--gpus", "all"
+		//"--gpus", "all"
 	],
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
