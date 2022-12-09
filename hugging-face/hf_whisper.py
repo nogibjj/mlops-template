@@ -8,7 +8,7 @@ import click
 # Create a function that reads a sample audio file and transcribes it using openai's whisper
 def traudio(filename, model="openai/whisper-tiny.en"):
     with open(filename, "rb") as f:
-        data = f.read()
+        _ = f.read() #this needs to be fixed
     print(f"Transcribing {filename}...")
     pipe = pipeline("automatic-speech-recognition", model=model)
     results = pipe(filename)
