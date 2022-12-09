@@ -8,7 +8,9 @@
 		"context": ".."
 	},
 	"features": {
-		"ghcr.io/devcontainers/features/nvidia-cuda:1": {},
+		"ghcr.io/devcontainers/features/nvidia-cuda:1": {
+			"installCudnn": true
+		},
 		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {}
 	  },
 
