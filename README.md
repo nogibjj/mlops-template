@@ -5,7 +5,7 @@
 
 **CONDA IS NOT NEEDED AS A PACKAGE MANAGER.  All setup is done using the Python Software Foundation recommended tools:  virtualenv and pip and mainstream production tools Docker.  Please see [PEP 453](https://peps.python.org/pep-0453/) "officially recommend the use of pip as the default installer for Python packages"**
 
-** GitHub Codespaces are FREE for education and as are GPU Codespaces as of this writing in December 2022**
+*GitHub Codespaces are FREE for education and as are GPU Codespaces as of this writing in December 2022*
 
 1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
 
