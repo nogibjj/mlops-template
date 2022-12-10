@@ -57,7 +57,7 @@ Additionally, this workspace is setup to fine-tune Hugging Face
 
 `python hugging-face/hf_fine_tune_hello_world.py` 
 
-#### Verify containerized GPU works
+#### Verify containerized GPU works for Tensorflow
 
 See [TensorFlow GPU documentation](https://www.tensorflow.org/install/docker)
 * Run `docker run --gpus all -it --rm tensorflow/tensorflow:latest-gpu \
