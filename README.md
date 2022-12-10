@@ -38,7 +38,7 @@ Things included are:
 
 ### Verify GPU works
 
-The following examples test out the GPU
+The following examples test out the GPU (including Docker GPU)
 
 * run pytorch training test: `python utils/quickstart_pytorch.py`
 * run pytorch CUDA test: `python utils/verify_cuda_pytorch.py`
@@ -46,6 +46,14 @@ The following examples test out the GPU
 * run nvidia monitoring test: `nvidia-smi -l 1` it should show a GPU
 * run whisper transcribe test `./utils/transcribe-whisper.sh` and verify GPU is working with `nvidia-smi -l 1`
 * run `lspci | grep -i nvidia` you should see something like:  `0001:00:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)`
+
+
+Additionally, this workspace is setup to fine-tune Hugging Face
+
+![fine-tune](https://user-images.githubusercontent.com/58792/195709866-121f994e-3531-493b-99af-c3266c4e28ea.jpg)
+
+
+`python hf_fine_tune_hello_world.py` 
 
 #### Verify containerized GPU works
 
@@ -55,17 +63,12 @@ See [TensorFlow GPU documentation](https://www.tensorflow.org/install/docker)
 
 * Also interactively explore:  `docker run --gpus all -it --rm tensorflow/tensorflow:latest-gpu`, then when inside run:
 `apt-get update && apt-get install pciutils` then `lspci | grep -i nvidia`
-
-Additionally, this workspace is setup to fine-tune Hugging Face
-
-![fine-tune](https://user-images.githubusercontent.com/58792/195709866-121f994e-3531-493b-99af-c3266c4e28ea.jpg)
-
-
-`python hf_fine_tune_hello_world.py` 
-
 ### Setup Docker Toolkit NVidia
 
 * [reference docs](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#install-guide)
+
+![mlops-tensorflow-gpu](https://user-images.githubusercontent.com/58792/206875904-114b4cf0-879d-497b-8690-267dac8b222d.jpg)
+
 
 
 ### Used in Following Projects
