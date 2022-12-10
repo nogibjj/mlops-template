@@ -55,7 +55,7 @@ Additionally, this workspace is setup to fine-tune Hugging Face
 ![fine-tune](https://user-images.githubusercontent.com/58792/195709866-121f994e-3531-493b-99af-c3266c4e28ea.jpg)
 
 
-`python hf_fine_tune_hello_world.py` 
+`python hugging-face/hf_fine_tune_hello_world.py` 
 
 #### Verify containerized GPU works
 
@@ -65,6 +65,9 @@ See [TensorFlow GPU documentation](https://www.tensorflow.org/install/docker)
 
 * Also interactively explore:  `docker run --gpus all -it --rm tensorflow/tensorflow:latest-gpu`, then when inside run:
 `apt-get update && apt-get install pciutils` then `lspci | grep -i nvidia`
+
+* To mount the code into your container:  `docker run --gpus all -it --rm -v $(pwd):/tmp tensorflow/tensorflow:latest-gpu /bin/bash`.  Then do `apt-get install git && cd /tmp`.  Then all you need to do is run `make install`.  Now you can verify you can train deep learning models by doing `python utils/quickstart_tf2.py`
+
 ### Setup Docker Toolkit NVidia
 
 * [reference docs](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#install-guide)
