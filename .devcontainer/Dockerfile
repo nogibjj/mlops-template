@@ -4,7 +4,8 @@ FROM mcr.microsoft.com/vscode/devcontainers/universal:2-focal
 RUN apt-get update && apt-get -y install --no-install-recommends \
    ffmpeg \ 
    python3.8-venv \
-   gcc 
+   gcc \
+   pciutils
 
 # https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#install-guide
 RUN distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \

@@ -45,6 +45,16 @@ The following examples test out the GPU
 * run tensorflow training test: `python utils/quickstart_tf2.py`
 * run nvidia monitoring test: `nvidia-smi -l 1` it should show a GPU
 * run whisper transcribe test `./utils/transcribe-whisper.sh` and verify GPU is working with `nvidia-smi -l 1`
+* run `lspci | grep -i nvidia` you should see something like:  `0001:00:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)`
+
+#### Verify containerized GPU works
+
+See [TensorFlow GPU documentation](https://www.tensorflow.org/install/docker)
+* Run `docker run --gpus all -it --rm tensorflow/tensorflow:latest-gpu \
+   python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"`
+
+* Also interactively explore:  `docker run --gpus all -it --rm tensorflow/tensorflow:latest-gpu`, then when inside run:
+`apt-get update && apt-get install pciutils` then `lspci | grep -i nvidia`
 
 Additionally, this workspace is setup to fine-tune Hugging Face
 
