@@ -53,6 +53,11 @@ Additionally, this workspace is setup to fine-tune Hugging Face
 
 `python hf_fine_tune_hello_world.py` 
 
+### Setup Docker Toolkit NVidia
+
+* [reference docs](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#install-guide)
+
+
 ### Used in Following Projects
 
 Used as the base and customized in the following Duke MLOps and Applied Data Engineering Coursera Labs:
