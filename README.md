@@ -3,6 +3,8 @@
 
 ## Template for MLOPs projects with GPU
 
+**CONDA IS NOT NEEDED AS A PACKAGE MANAGER.  All setup is done using the Python Software Foundation recommended tools:  virtualenv and pip and mainstream production tools Docker.**
+
 1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
 
 Things included are:
