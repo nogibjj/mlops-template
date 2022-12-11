@@ -3,7 +3,9 @@
 
 ## Template for MLOPs projects with GPU
 
-**CONDA IS NOT NEEDED AS A PACKAGE MANAGER.  All setup is done using the Python Software Foundation recommended tools:  virtualenv and pip and mainstream production tools Docker.**
+**CONDA IS NOT NEEDED AS A PACKAGE MANAGER.  All setup is done using the Python Software Foundation recommended tools:  virtualenv and pip and mainstream production tools Docker.  Please see [PEP 453](https://peps.python.org/pep-0453/) "officially recommend the use of pip as the default installer for Python packages"**
+
+*GitHub Codespaces are FREE for education and as are GPU Codespaces as of this writing in December 2022*
 
 1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
 
@@ -89,6 +91,7 @@ Used as the base and customized in the following Duke MLOps and Applied Data Eng
 * [Coursera-MLOps-C2-lab4-greedy-optimization](https://github.com/nogibjj/Coursera-MLOps-C2-lab4-greedy-optimization)
 ### References
 
+* [Docker "one-liners" for Tensorflow recommenders](https://www.tensorflow.org/resources/recommendation-systems)
 * [Watch GitHub Universe Talk:  Teaching MLOps at scale with Github](https://watch.githubuniverse.com/on-demand/ec17cbb3-0a89-4764-90a5-9debb58515f8)
 * [Building Cloud Computing Solutions at Scale Specialization](https://www.coursera.org/specializations/building-cloud-computing-solutions-at-scale)
 * [Python, Bash and SQL Essentials for Data Engineering Specialization](https://www.coursera.org/learn/web-app-command-line-tools-for-data-engineering-duke)
