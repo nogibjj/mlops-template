@@ -72,12 +72,22 @@ See [TensorFlow GPU documentation](https://www.tensorflow.org/install/docker)
 
 * To mount the code into your container:  `docker run --gpus all -it --rm -v $(pwd):/tmp tensorflow/tensorflow:latest-gpu /bin/bash`.  Then do `apt-get install -y git && cd /tmp`.  Then all you need to do is run `make install`.  Now you can verify you can train deep learning models by doing `python utils/quickstart_tf2.py`
 
+##### More Tensorflow GPU Ideas
+
+https://www.tensorflow.org/resources/recommendation-systems
+
+```bash
+# Deploy the retrieval model with TensorFlow Serving
+docker run -t --rm -p 8501:8501 \
+  -v "RETRIEVAL/MODEL/PATH:/models/retrieval" \
+  -e MODEL_NAME=retrieval tensorflow/serving &
+```
+
 ### Setup Docker Toolkit NVidia
 
 * [reference docs](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#install-guide)
 
 ![mlops-tensorflow-gpu](https://user-images.githubusercontent.com/58792/206875904-114b4cf0-879d-497b-8690-267dac8b222d.jpg)
-
 
 
 ### Used in Following Projects
